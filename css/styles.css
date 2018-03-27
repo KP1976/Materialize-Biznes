@@ -1,0 +1,31 @@
+.header {
+  background: url("../img/city.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 900px;
+}
+
+nav {
+  padding: 0 2rem;
+}
+
+.jumbotron {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .jumbotron {
+    text-align: center;
+  }
+
+  .jumbotron h4 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .jumbotron h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
