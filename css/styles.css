@@ -14,16 +14,9 @@ nav {
   text-align: right;
 }
 
-.section-boxes {
-  padding: 0;
-}
-
-.section-boxes .box {
-  padding: 2rem;
-}
-
-.section-boxes .row {
-  margin: 0;
+.section-aboutus .box {
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 
 .section-contact {
@@ -48,6 +41,21 @@ nav {
   z-index: 0;
 }
 
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #005795;
+  box-shadow: 0 1px 0 0 #005795;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #005795;
+}
+
 @media (max-width: 600px) {
   .jumbotron {
     text-align: center;
@@ -60,6 +68,14 @@ nav {
 
   .jumbotron h2 {
     font-size: 3rem;
+    text-align: center;
+  }
+
+  .card-panel {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .page-footer .col {
     text-align: center;
   }
 }
