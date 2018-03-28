@@ -14,6 +14,40 @@ nav {
   text-align: right;
 }
 
+.section-boxes {
+  padding: 0;
+}
+
+.section-boxes .box {
+  padding: 2rem;
+}
+
+.section-boxes .row {
+  margin: 0;
+}
+
+.section-contact {
+  position: relative;
+}
+
+.section-contact .input-field {
+  margin-top: 2rem;
+}
+
+.section-contact .card-panel {
+  position: relative;
+  z-index: 1;
+}
+
+#googlemap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 @media (max-width: 600px) {
   .jumbotron {
     text-align: center;
